@@ -1,35 +1,16 @@
 @font-face {
     font-family: $font-primary;
-    src: url('../fonts/SKReykjavikRounded-Regular.woff2') format('woff2'),
-        url('../fonts/SKReykjavikRounded-Regular.woff') format('woff');
-    font-weight: normal;
+    src: url('../fonts/FONTSPRINGDEMO-VoireBlackRegular.woff2') format('woff2'),
+        url('../fonts/FONTSPRINGDEMO-VoireBlackRegular.woff') format('woff');
+    font-weight: 900;
     font-style: normal;
     font-display: swap;
-  }   
- 
-
-  @font-face {
-    font-family: $font-secondary;
-    src: url('../fonts/FredericBlackItalic.woff2') format('woff2'),
-        url('../fonts/FredericBlackItalic.woff') format('woff');
-    font-weight: 900;
-    font-style: italic;
-    font-display: swap;
 }
-
+// 
 @font-face {
-    font-family: $font-secondary;
-    src: url('../fonts/FredericBoldItalic.woff2') format('woff2'),
-        url('../fonts/FredericBoldItalic.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: $font-secondary;
-    src: url('../fonts/FredericBold.woff2') format('woff2'),
-        url('../fonts/FredericBold.woff') format('woff');
+    font-family: $font-primary;
+    src: url('../fonts/FONTSPRINGDEMO-VoireBoldRegular.woff2') format('woff2'),
+        url('../fonts/FONTSPRINGDEMO-VoireBoldRegular.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -37,8 +18,35 @@
 
 @font-face {
     font-family: $font-secondary;
-    src: url('../fonts/FredericBlack.woff2') format('woff2'),
-        url('../fonts/FredericBlack.woff') format('woff');
+    src: url('../fonts/FONTSPRINGDEMO-VoireDisplayExtraLightRegular.woff2') format('woff2'),
+        url('../fonts/FONTSPRINGDEMO-VoireDisplayExtraLightRegular.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: $font-secondary;
+    src: url('../fonts/FONTSPRINGDEMO-VoireDisplayExtraBoldRegular.woff2') format('woff2'),
+        url('../fonts/FONTSPRINGDEMO-VoireDisplayExtraBoldRegular.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: $font-secondary;
+    src: url('../fonts/FONTSPRINGDEMO-VoireDisplayMediumRegular.woff2') format('woff2'),
+        url('../fonts/FONTSPRINGDEMO-VoireDisplayMediumRegular.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: $font-secondary;
+    src: url('../fonts/FONTSPRINGDEMO-VoireDisplayBlackRegular.woff2') format('woff2'),
+        url('../fonts/FONTSPRINGDEMO-VoireDisplayBlackRegular.woff') format('woff');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -46,26 +54,109 @@
 
 @font-face {
     font-family: $font-secondary;
-    src: url('../fonts/FredericRegularItalic.woff2') format('woff2'),
-        url('../fonts/FredericRegularItalic.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
+    src: url('../fonts/FONTSPRINGDEMO-VoireDisplayBoldRegular.woff2') format('woff2'),
+        url('../fonts/FONTSPRINGDEMO-VoireDisplayBoldRegular.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
     font-display: swap;
 }
 
 @font-face {
     font-family: $font-secondary;
-    src: url('../fonts/FredericRegular.woff2') format('woff2'),
-        url('../fonts/FredericRegular.woff') format('woff');
+    src: url('../fonts/FONTSPRINGDEMO-VoireDisplayLightRegular.woff2') format('woff2'),
+        url('../fonts/FONTSPRINGDEMO-VoireDisplayLightRegular.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: $font-primary;
+    src: url('../fonts/FONTSPRINGDEMO-VoireMediumRegular.woff2') format('woff2'),
+        url('../fonts/FONTSPRINGDEMO-VoireMediumRegular.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: $font-primary;
+    src: url('../fonts/FONTSPRINGDEMO-VoireLightRegular.woff2') format('woff2'),
+        url('../fonts/FONTSPRINGDEMO-VoireLightRegular.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: $font-primary;
+    src: url('../fonts/FONTSPRINGDEMO-VoireExtraLightRegular.woff2') format('woff2'),
+        url('../fonts/FONTSPRINGDEMO-VoireExtraLightRegular.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Voire Display';
+    src: url('../fonts/FONTSPRINGDEMO-VoireDisplayRegular.woff2') format('woff2'),
+        url('../fonts/FONTSPRINGDEMO-VoireDisplayRegular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'FONTSPRING DEMO - Voire Display';
+    src: url('../fonts/FONTSPRINGDEMO-VoireDisplaySemiBoldRegular.woff2') format('woff2'),
+        url('../fonts/FONTSPRINGDEMO-VoireDisplaySemiBoldRegular.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
 
+@font-face {
+    font-family: 'FONTSPRING DEMO - Voire Display';
+    src: url('../fonts/FONTSPRINGDEMO-VoireDisplayThinRegular.woff2') format('woff2'),
+        url('../fonts/FONTSPRINGDEMO-VoireDisplayThinRegular.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
 
+@font-face {
+    font-family: $font-primary;
+    src: url('../fonts/FONTSPRINGDEMO-VoireExtraBoldRegular.woff2') format('woff2'),
+        url('../fonts/FONTSPRINGDEMO-VoireExtraBoldRegular.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
 
+@font-face {
+    font-family: $font-primary;
+    src: url('../fonts/FONTSPRINGDEMO-VoireRegular.woff2') format('woff2'),
+        url('../fonts/FONTSPRINGDEMO-VoireRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
+@font-face {
+    font-family: $font-primary;
+    src: url('../fonts/FONTSPRINGDEMO-VoireThinRegular.woff2') format('woff2'),
+        url('../fonts/FONTSPRINGDEMO-VoireThinRegular.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
 
-
+@font-face {
+    font-family: $font-primary;
+    src: url('../fonts/FONTSPRINGDEMO-VoireSemiBoldRegular.woff2') format('woff2'),
+        url('../fonts/FONTSPRINGDEMO-VoireSemiBoldRegular.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
 

@@ -101,16 +101,6 @@ module.exports = {
       },
 
       {
-        test: /\.(jpe?g|png|gif|svg|woff2?|fnt|webp)$/,
-        loader: 'file-loader',
-        options: {
-          name (file) {
-            return '[hash].[ext]'
-          }
-        }
-      },
-
-      {
         test: /\.(jpe?g|png|gif|svg|webp)$/i,
         use: [
           {

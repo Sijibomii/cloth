@@ -1,121 +1,64 @@
 .navigation{
-    z-index: z('navigation');
-    max-width: 170rem; 
-    margin: auto;  
-    overflow-x: hidden;
-    background-color: transparent;
-    position: relative;
-    padding: 2rem 0rem;
-    opacity: 0;
-
-    .navigation__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 175rem;
+    padding: 6.4rem 0rem;
+    margin: auto;
+    z-index: 2;
+    position: sticky;
+    .navigation__list{
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        padding-top: 3rem;
-        @include media('<phone') {
-            padding-left: 3rem ;
-            padding-right: 3rem;
-          }
-
-        .navigation__link__container{
-            // padding-top: 2rem;
-            .navigation__link{
-                font-size: 4rem;
-                font-family: sans-serif;
-                font-weight: 600;
-            }
-        }
-
-        .navigation__list__container{
-            position: absolute;
-            left: 24%;
-            @include media('<phone') {
-                display: none;
-              }
-
-            .navigation__list{
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-
-                .navigation__list__item{
-                    padding: 1rem;
-                    .navigation__list__link{
-                        border-radius: 30px;
-                        border: 2.5px solid black;
-                        color: black;
-                        padding: 1.4rem 6rem;
-                        font-size: 2.2rem;
-                        background-color: white;
-                        margin-bottom: 5rem;
-                    }
-                }
-                .nav__community{
-                   
-                }
-
-                .nav__small__group{
-                    margin-left: 0.1rem;
-                }
-
-                .nav__become__coach{
-                    margin-left: 0.9rem;
-                }
-            }
-        }
-
-        .navigation__shop__container{
-            position: absolute;
-            left: 90%;
-            padding: 2.2rem 4rem;
-            background-color: $color-purple;
-            border: 2.5px solid black;
-            margin-left: -3rem;
-            border-radius: 15px;
-            color: black;
-            font-size: 2rem;
-            @include media('<phone') {
-                display: none;
-              }
-        }
-
-        .navigation__mobile__btns{
-            @include media('>phone') {
-                display: none;
-              }
-            .navigation__button__dashes{
-                align-items: center;
-                display: flex;
-                height: 26px;
-                position: relative;
-                width: 26px;
-                .navigation__button__dash{
-                    border-top: 1px solid;
-                    left: 50%;
-                    position: absolute;
-                    top: 50%;
-                    transform: translate(-50%,-50%);
-                    transform-style: preserve-3d;
-                    transition: transform 1s ease;
-                    width: 100%
-                }
-    
-                
-            }
-            .navigation__button__dash:first-child {
-                transform: translate(-50%,-4px);
-            }
-            .navigation__button__dash:nth-child(2) {
-                display: block;
-                left: 0;
-                transform: none;
-            }
-            .navigation__button__dash:nth-child(3) {
-                transform: translate(-50%,4px);
+        .navigation__list__item{
+            .navigation__list__link{
+                padding-right: 3.5rem;
+                margin-right: 4.8rem;
+                font-size: 2rem;
+                text-transform: uppercase;
             }
         }
     }
 
+    .navigation__right {
+        position: absolute;
+        right: 0rem;
+        display: flex;
+        align-items: center;
+        .navigation__right__item {
+            position: relative;
+            border-radius: 0 0 150px 150px;
+            height: 5rem;
+            width: 5rem;
+            background-color: black;
+            margin-right: 2.3rem;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .navigation__right__item:first-of-type{
+            svg{
 
+            }
+        }
+
+        .navigation__right__item:nth-of-type(2){
+            height: 5.2rem;
+            width: 5.2rem;
+            margin-right: 0rem;
+            .navigation__right__item__media {
+                // position: absolute;
+                height: .5rem;
+                width: .5rem;
+                .navigation__right__item__image{
+                    @extend %cover;
+                    vertical-align: top;
+                    object-fit: cover;
+
+                }
+            }
+        }
+    }
 }
