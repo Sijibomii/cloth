@@ -8,9 +8,21 @@
     margin: auto;
     z-index: 2;
     position: sticky;
+    @include media('<phone') { 
+        padding: 6.4rem 3rem;
+       }
+    .nav__mobile__icon {
+        display: none;
+        @include media('<phone') { 
+            display: block;
+           }
+    }
     .navigation__list{
         display: flex;
         align-items: center;
+        @include media('<phone') {
+            display: none;
+           }
         .navigation__list__item{
             .navigation__list__link{
                 padding-right: 3.5rem;
@@ -26,6 +38,9 @@
         right: 0rem;
         display: flex;
         align-items: center;
+        @include media('<phone') {
+            right: 3rem;
+           }
         .navigation__right__item {
             position: relative;
             border-radius: 0 0 150px 150px;
@@ -37,11 +52,9 @@
             display: flex;
             align-items: center;
             justify-content: center;
-        }
-        .navigation__right__item:first-of-type{
-            svg{
-
-            }
+            @include media('<tablet') {
+                padding: 0rem 1rem;
+               }
         }
 
         .navigation__right__item:nth-of-type(2){
