@@ -1049,7 +1049,7 @@
             background-color: $color-cream;
             position: relative;
             @include media('<phone') {
-                display: none;
+                overflow: hidden;
                }
             .home__footer__container {
                 display: grid;
@@ -1066,6 +1066,11 @@
                     left: 38.5rem;
                     background-color: $color-dark-cream;
                     z-index: 1;
+                    @include media('<phone') {
+                        height: 35rem;
+                        width: 70rem;
+                        left: 2.5rem;
+                       }
                 }
                 .home__footer__title{
                     font-family: $font-primary;
@@ -1083,6 +1088,12 @@
                     margin-top: 35rem;
                     margin-left: -8rem;
                     line-height: 23rem;
+                    @include media('<phone') {
+                       font-size: 10rem;
+                       line-height: 10rem;
+                       margin-top: 5rem;
+                       margin-left: -5rem;
+                       }
 
                 }
                 .join__now__btn{
@@ -1099,6 +1110,10 @@
                     align-items: center;
                     justify-content: space-between;
                     padding-right: 1.2rem;
+                    @include media('<phone') {
+                       left: 25rem;
+                       top: 55rem;
+                        }
                     h3{
                         font-size: 3.2rem;
                         font-family: $font-primary;
@@ -1137,6 +1152,9 @@
                         top: 0rem;
                         margin-top: -6rem;
                         z-index: 4;
+                        @include media('<phone') {
+                            display: none;
+                            }
                         .home__footer__item__image{
                             @extend %cover;
                             vertical-align: top;
@@ -1148,6 +1166,10 @@
                         top: 0rem;
                         margin-top: -6rem;
                         z-index: 3;
+                        @include media('<phone') {
+                            left: -17rem;
+                            margin-top: -30rem
+                            }
                         .home__footer__item__image{
                             @extend %cover;
                             vertical-align: top;
@@ -1159,6 +1181,9 @@
                         left: 67rem;
                         top: 0rem;
                         margin-top: -6rem;
+                        @include media('<phone') {
+                            display: none;
+                            }
                         .home__footer__item__image{
                             @extend %cover;
                             vertical-align: top;
@@ -1184,6 +1209,10 @@
                     margin-left: 9rem;
                     width: 100%;
                     padding-bottom: 2.5rem;
+                    @include media('<phone') {
+                        margin-left: 0rem;
+                        padding: 3rem;
+                        }
                     // margin-top: 3rem;
 
                     .footer__bottom__left__item{
@@ -1205,6 +1234,9 @@
                         display: flex;
                         align-items: center;
                         margin-left: 13rem;
+                        @include media('<phone') {
+                            display: none;
+                            }
                         li{
                             text-transform: uppercase;
                             .footer__bottom__navigation__list__link{
@@ -1226,6 +1258,9 @@
                         display: flex;
                         align-items: center;
                         justify-content: center;
+                        @include media('<phone') {
+                            // display: none;
+                            }
                         .footer__navigation__right__item__media {
                             position: relative;
                             height: 5rem;
